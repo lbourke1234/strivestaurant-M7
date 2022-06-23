@@ -21,7 +21,6 @@ const Reservations = () => {
 
       if (response.ok) {
         let data = await response.json()
-        console.log(data)
         setReservations(data)
         setIsLoading(false)
       } else {
